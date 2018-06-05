@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#89ffff"
+    android:orientation="vertical"
+    >
+
+
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/shangpin_pull"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent" >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/fenlei_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="#0099ff"
+        >
+
+    </android.support.v4.view.ViewPager>
+
+
+       <LinearLayout
+           android:id="@+id/fenlei_line"
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:orientation="horizontal"
+           android:background="#ffff56"
+           android:layout_below="@id/fenlei_viewpager"
+           android:gravity="center"
+           >
+       </LinearLayout>
+
+   </RelativeLayout>
+
+
+    <bway.com.day_0530_lianxi.MyListView
+        android:id="@+id/shangpin_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </bway.com.day_0530_lianxi.MyListView>
+
+</LinearLayout>
+
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+</LinearLayout>
