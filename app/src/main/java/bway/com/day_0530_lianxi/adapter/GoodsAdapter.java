@@ -17,6 +17,7 @@ import bway.com.day_0530_lianxi.bean.GoodsBean;
 
 public class GoodsAdapter extends BaseAdapter {
 
+    //123
     private Context context;
     private List<GoodsBean.DataBean> list;
 
